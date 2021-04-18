@@ -11,3 +11,15 @@ spring:
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
     show-sql: true
+   
+   
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka-peer1:8765/eureka ,http://eureka-peer2:8770/eureka
+  instance:
+    prefer-ip-address: true   
+  
+    
